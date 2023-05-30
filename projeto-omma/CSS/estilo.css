@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box; 
+    /* garante q o elemento ocupe o espaço máximo do width */
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .logo {
+background-color:#FFC107;
+text-align: center;}
+
+header .menu {
+    background-color: #FFA000; /* background-color = cor de fundo */
+    /* flexbox (mais detalhes na prox. aula) */
+    display: flex; /* ativar flexbox */
+    justify-content: center; /* centralizar na horizontal */
+}
+
+header .menu ul {
+    margin: 0; 
+    list-style: none;
+} 
+
+header .menu ul li {
+    display: inline-block;  
+    padding: 10px 15px;
+
+} 
+
+header .menu ul li a { 
+    text-decoration: none; 
+    color: #fdfdfd
+} 
+
+main section.banner {
+    height: 600px; /*altura*/ 
+    background-color: orangered; 
+    background-image: url(../imagens/banner-home.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; /*cobre todo o espaço da section*/
+}
+
+main section.banner .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end; /* alinhamento horizontal pra direita */
+    align-items: center; /* alinhamento vertical centralizado */
+    height: 600px; /* altura */
+} 
+
+main section.banner h1 {
+    font-size: 70px;
+    text-transform: lowercase;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.36);
+    padding: 100px;
+}
+
+main section.receitas-principais .container {
+    min-height: 600px;  
+    width: 1200px;  
+    max-width: 100%;
+    margin: 0 auto; 
+} 
+
+main section.receitas-principais h2{ 
+    color:#FFA000;
+    text-align: center; 
+    font-weight: bold; /* grossura da letra */
+    font-size: 55px;  
+    text-transform: lowercase;
+} 
+
+.lista-receitas {
+    display: flex; /* ativa flexbox */
+    justify-content: space-evenly; /* distância entre elementos */
+    align-items: flex-start; /* elementos alinhados no topo */
+    flex-wrap: wrap; 
+}
+
+.lista-receitas article {
+    width: 345px; 
+    text-align: center; 
+    margin-bottom: 60px;
+} 
+
+.lista-receitas .thumb {
+    width: 100%;
+    height: 280px; 
+    background-color: orange;
+    background-size: cover; /* ocupa todo espaço */ 
+    background-repeat:no-repeat; 
+    background-position: center;
+}  
+
+.lista-receitas article h3 {
+    font-size: 26px;
+}
+
+.lista-receitas article a {
+    background-color: #176902; 
+    color:#fff;
+    font-size: 24px; 
+    font-weight: bold; 
+    padding: 5px 25px; /*espaçamento interno do botão */ 
+    text-decoration: none; /* tirar sublinhado */
+} 
+
+section.banner-secundario {
+background-image: url(../Imagens/banner-end.png);
+} 
+
+section.banner-secundario .container {
+    min-height: 600px;
+    width: 1200px;  
+    max-width: 100%;
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;  
+}
+ 
+section.banner-secundario .container h2 {
+    font-size: 62px;  
+    max-width: 100%;
+    color:#fff; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}  
+
+section.banner-secundario .container p {
+    color:#fff; 
+    font-size: 24px; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    width: 450px;
+    max-width: 100%;
+} 
+
+footer {
+    background-color: #FFC107; 
+    color:#fff; 
+    font-weight: 700; 
+    font-size: 18px;
+} 
+
+footer .container {
+    width: 1200px;  
+    max-width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px 0;
+} 
+
+footer p {
+    padding: 0 15px;
+} 
+
+/* Página 2: Todas as Receitas */
+
+main section.todas-receitas .container {
+min-height: 600px;
+width: 1200px; 
+max-width: 100%;
+margin: 50px auto;
+/* display: flex; */
+justify-content: space-between;
+align-items: flex-start; 
+width: 700px;
+}
+    
+main section.todas-receitas h2 {
+color: #ffa000;
+font-weight: 1200px;
+font-size: 50px;
+} 
+
+/* Página Receita de Risoto */  
+.container-receita-interna {
+    width: 1200px; 
+    max-width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-receita-interna main {
+    width: 700px; 
+    max-width: 100%;
+}
+
+.container-receita-interna main img {
+    width: 100%; 
+    max-width: 100%;
+}
+
+small.tag {
+    display: inline-block;
+    border: 1px solid #176902;
+    border-radius: 47px;
+    color: #176902;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+aside article.receita-relacionada {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 40px 0;
+}
+
+aside article.receita-relacionada .thumb {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+aside article.receita-relacionada h3 {
+    padding: 10px;
+    margin: 0;
+    text-transform: lowercase;
+    text-align: center;
+} 
+
+/* Página Contato */
+.banner-contato {
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagens/banner-start.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner-contato .container,
+section.contato .container {
+    width: 1000px; 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+}
+.banner-contato .container h1 {
+    color: #fff; 
+    max-width: 100%;
+    font-size: 70px;
+}
+.banner-vertical {
+    width: 30%;
+    height: 700px;
+    background-image: url(../imagens/banner-left.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+.formulario {
+    border: 1px solid #FFA000;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 30px;
+    width: 70%;
+}
+.formulario h2 {
+    color: #FFA000;
+} 
+
+.formulario form input {
+    width: 100%; 
+    border: 1px solid #FFA000;
+    border-radius: 7px; 
+    padding: 10px; 
+    margin: 5px 0;
+}
+
+.formulario form textarea{
+    width: 100%; 
+    border: 1px solid #FFA000;
+    border-radius: 7px; 
+    padding: 10px; 
+    margin: 5px 0; 
+    height: 200px;
+} 
+
+.formulario form button {
+    font-size:16px;
+    background-color: #FFA000; 
+    color:#fff; 
+    font-family: 'Montserrant', sans-serif;
+    font-weight: 500; 
+    border: 1px solid #FFA000;
+    padding: 5px 15px; 
+    border-radius: 30px; 
+}
+
+.formulario form button:hover {
+    background-color: #FFC107; 
+    border-color: #FFC107;
+    cursor: pointer;
+}  
+
+@media (max-width: 1100px) {
+    .container, .container-receita-interna {
+        width:900px !important; 
+        /* !important sobrescreve outras regras */
+    }
+} 
+
+main section.banner .container {
+    justify-content: flex-start;
+} 
+
+.lista-receitas article {
+    width: 250px;
+} 
+
+.container-receita-interna main { 
+    width: 500px;
+} 
+
+.container-receita-interna main iframe {
+    width: 100%;
+} 
+
+@media (max-width: 900px) {
+    .container,
+    .container-receita-interna {
+        width: 800px !important; 
+        padding: 0 20px;
+    } 
+} 
+
+.lista-receitas article {
+    padding: 10px;
+} 
+
+@media (max-width: 700px) {
+    .container,
+    .container-receita-interna {
+        width: 500px !important; 
+        padding: 0 10px;
+    } 
+}  
+
+@media (max-width: 300px) {
+    .container,
+    .container-receita-interna {
+        width: 50px !important; 
+        padding: 0 5px;
+    } 
+} 
